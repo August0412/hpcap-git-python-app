@@ -21,6 +21,6 @@ jobs:
       run: |
         echo $USER
         echo $PASS
-        docker build . --file Dockerfile --tag atharv0412:$(date +%s)
+        docker build . --file Dockerfile --tag atharv0412/github:$(date +%s)
         docker login -u $USER -p $PASS
         docker push atharv0412/github:$(date +%s)
