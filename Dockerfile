@@ -4,9 +4,6 @@ FROM python:3.11-slim
 # Set the working directory inside the container
 WORKDIR /app
 
-# Install the dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
 # Copy the Flask app and templates folder into the container
 COPY calc.py .
 COPY templates/ /app/templates/
