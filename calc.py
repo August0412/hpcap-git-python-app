@@ -13,6 +13,15 @@ def home():
     print("Technologies:")
     for tech in technologies:
         print(tech)
+
+    # List of Students
+    students = ['Chaitali', 'Atharv', 'Apurva', 'Anirudh']
+
+    # Print technologies using a for loop in Python
+    print("Students:")
+    for stud in students:
+        print(stud)
+
     return render_template('index.html', name=name, pnr=pnr)
 
 print "This is used for git"
